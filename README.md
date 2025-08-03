@@ -4,9 +4,10 @@
 
 ## 📄 A Take Home Assignment for Founding Software Engineer - iOS by Yash Lalit
 
-- **Developer**: [Yash Lalit]
-- **Email**: [yashlalit.23@gmail.com]
+- **Developer**: Yash Lalit
+- **Email**: yashlalit.23@gmail.com
 - **GitHub**: [@happy-mammal](https://github.com/happy-mammal)
+- **LinkedIn**: [Yash Lalit](https://www.linkedin.com/in/yash-lalit/)
 
 ## 📱 Overview
 Challengely is a beautifully designed iOS application that helps users build positive habits through daily challenges. The app features an intelligent AI chat assistant, smooth onboarding flow, and engaging daily challenges with progress tracking.
@@ -123,4 +124,4 @@ Challengely/
 └── 🚀 ChallengelyApp.swift          # App entry point
 ```
 
-# NOTE: Please Go to DailyChallengeCardView and find "I have intentially made this mistake here so that challege is complete in 10 secs" as MARK comment and chage min to mins in order to get real timer as per challege estimated time.
+# NOTE: Please Go to DailyChallengeCardView and find "I have intentially made this mistake here so that challenge is completed in 10 secs" as MARK comment and change min to mins in order to get real timer as per the challege estimated time.
