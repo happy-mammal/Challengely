@@ -136,6 +136,7 @@ extension ChatInputView {
             if canSend {
                 Button(action: {
                     if canSend {
+                        isFocused = false
                         onSend()
                     }
                 }) {
@@ -307,6 +308,7 @@ extension ChatInputView {
                 Button {
                     showExpandedInput = false
                     if canSend {
+                        isFocused = false
                         onSend()
                     }
                     

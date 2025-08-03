@@ -10,7 +10,7 @@ struct UserNameView: View {
     let animate: Bool
     @Binding var name: String
 
-    @FocusState private var isFocused: Bool
+    @FocusState.Binding var isFocused: Bool
     @State private var animateLocal = false
 
     var body: some View {
@@ -91,6 +91,6 @@ struct UserNameView: View {
 
 #Preview {
     @Previewable @State var name: String = ""
-    
-    UserNameView(animate: true, name: $name)
+    @Previewable @FocusState var isFocused: Bool
+    UserNameView(animate: true, name: $name, isFocused: $isFocused)
 }

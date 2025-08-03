@@ -13,6 +13,8 @@ struct OnboardingView: View {
     
     private let screen = UIScreen.main.bounds
     
+    @FocusState private var isFocused: Bool
+    
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
             ScrollViewReader { proxy in
@@ -100,7 +102,8 @@ extension OnboardingView {
                     name: Binding(
                         get: { viewStore.name },
                         set: { viewStore.send(.nameChanged($0)) }
-                    )
+                    ),
+                    isFocused: $isFocused
                 )
                 .frame(width: screen.width)
                 .fixedSize(horizontal: true, vertical: false)
@@ -130,6 +133,9 @@ extension OnboardingView {
     
     func backButton(_ viewStore: ViewStoreOf<OnboardingStore>, proxy: ScrollViewProxy) -> some View {
         Button {
+            if viewStore.currentPage == 3 {
+                isFocused = false
+            }
             viewStore.send(.backTapped)
             withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
                 proxy.scrollTo(viewStore.currentPage, anchor: .center)
@@ -202,7 +208,13 @@ extension OnboardingView {
     
     func nextButton(_ viewStore: ViewStoreOf<OnboardingStore>, proxy: ScrollViewProxy) -> some View {
         Button {
+            
+            if viewStore.currentPage == 3 {
+                isFocused = false
+            }
+            
             viewStore.send(.nextTapped)
+            
             withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
                 proxy.scrollTo(viewStore.currentPage, anchor: .center)
             }

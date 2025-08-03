@@ -67,4 +67,4 @@ class ChatStorage: ChatStoreProtocol {
         userDefaults.set(data, forKey: ChatStoreKeys.history.rawValue)
         userDefaults.set(Date.now.ISO8601Format(), forKey: ChatStoreKeys.lastSavedOn.rawValue)
     }
-} 
+}
