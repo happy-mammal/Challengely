@@ -79,13 +79,8 @@ struct UserNameView: View {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
                         animateLocal = true
                     }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        isFocused = true
-                    }
+
                 }
-            } else {
-                animateLocal = false
-                isFocused = false
             }
 
         }

@@ -110,7 +110,9 @@ extension OnboardingView {
                     removal: .move(edge: .leading).combined(with: .opacity)
                 ))
                 
-                OnboardingCompleteView()
+                OnboardingCompleteView(
+                    animate: viewStore.currentPage == 4
+                   )
                     .frame(width: screen.width)
                     .fixedSize(horizontal: true, vertical: false)
                     .id(4)

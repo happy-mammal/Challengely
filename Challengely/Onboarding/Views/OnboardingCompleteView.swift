@@ -9,7 +9,10 @@ import SwiftUI
 import ConfettiSwiftUI
 
 struct OnboardingCompleteView: View {
-    @State private var animate: Bool = false
+    
+    let animate: Bool
+    
+    @State private var animateLocal = false
     
     var body: some View {
         VStack(spacing: 30) {
@@ -39,15 +42,25 @@ struct OnboardingCompleteView: View {
 
             Spacer()
         }
-        .confettiCannon(trigger: $animate)
-        .onAppear {
-            animate = true
+        .confettiCannon(trigger: $animateLocal)
+        .onChange(of: animate) { _, newValue in
+            if newValue {
+               
+                withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                    animateLocal = true
+                }
+                
+            } else {
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
+                    animateLocal = false
+                }
+            }
         }
     }
 }
 
 #Preview {
    
-    OnboardingCompleteView()
+    OnboardingCompleteView(animate: true)
     
 }

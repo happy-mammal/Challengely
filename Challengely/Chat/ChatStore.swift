@@ -247,7 +247,7 @@ struct ChatStore {
         }
         
         // Fallback to general suggestions
-        return ChatServiceConstants.fallbackSuggestions
+        return ChatServiceConstants.keywordToSuggestions.randomElement()!.value
     }
     
 
