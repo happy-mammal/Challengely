@@ -61,7 +61,7 @@ extension OnboardingWelcomeView {
                 .offset(y: animate ? 0 : 20)
                 .animation(.easeOut(duration: 0.4).delay(0.2), value: animate)
             
-            Text("Challengly")
+            Text("Challengely")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundStyle(Color(.systemBlue))
