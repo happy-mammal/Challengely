@@ -123,4 +123,4 @@ Challengely/
 └── 🚀 ChallengelyApp.swift          # App entry point
 ```
 
-# NOTE: Please Go to DailyChallengeCardView and find "I have intentially made this mistake here so that challege is complete in 10 secs" as MARK comment and chage min to mins in order to get real timer as per challege estimated time.
+# NOTE: Please Go to DailyChallengeCardView and find "I have intentially made this mistake here so that challenge is completed in 10 secs" as MARK comment and change min to mins in order to get real timer as per the challege estimated time.
