@@ -1,0 +1,816 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Challengely.xcodeproj -scheme Challengely -destination "platform=iOS Simulator,name=iPhone 16" build
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  combine-schedulers: https://github.com/pointfreeco/combine-schedulers @ 1.0.3
+  swift-perception: https://github.com/pointfreeco/swift-perception @ 1.6.0
+  swift-custom-dump: https://github.com/pointfreeco/swift-custom-dump @ 1.3.3
+  swift-collections: https://github.com/apple/swift-collections @ 1.2.1
+  swift-dependencies: https://github.com/pointfreeco/swift-dependencies @ 1.9.2
+  swift-composable-architecture: https://github.com/pointfreeco/swift-composable-architecture.git @ 1.20.2
+  swift-concurrency-extras: https://github.com/pointfreeco/swift-concurrency-extras @ 1.3.1
+  swift-clocks: https://github.com/pointfreeco/swift-clocks @ 1.0.6
+  swift-syntax: https://github.com/swiftlang/swift-syntax @ 601.0.1
+  ConfettiSwiftUI: https://github.com/simibac/ConfettiSwiftUI.git @ 2.0.3
+  swift-navigation: https://github.com/pointfreeco/swift-navigation @ 2.3.2
+  xctest-dynamic-overlay: https://github.com/pointfreeco/xctest-dynamic-overlay @ 1.6.0
+  swift-case-paths: https://github.com/pointfreeco/swift-case-paths @ 1.7.1
+  swift-identified-collections: https://github.com/pointfreeco/swift-identified-collections @ 1.1.1
+  swift-sharing: https://github.com/pointfreeco/swift-sharing @ 2.5.2
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (68 targets)
+    Target 'Challengely' in project 'Challengely'
+        ➜ Explicit dependency on target 'ConfettiSwiftUI' in project 'ConfettiSwiftUI'
+        ➜ Explicit dependency on target 'ComposableArchitecture' in project 'swift-composable-architecture'
+    Target 'ComposableArchitecture' in project 'swift-composable-architecture'
+        ➜ Explicit dependency on target 'ComposableArchitecture' in project 'swift-composable-architecture'
+        ➜ Explicit dependency on target 'swift-composable-architecture_ComposableArchitecture' in project 'swift-composable-architecture'
+        ➜ Explicit dependency on target 'ComposableArchitectureMacros' in project 'swift-composable-architecture'
+        ➜ Explicit dependency on target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CombineSchedulers' in project 'combine-schedulers'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'Dependencies' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'DependenciesMacros' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'IdentifiedCollections' in project 'swift-identified-collections'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'Perception' in project 'swift-perception'
+        ➜ Explicit dependency on target 'Sharing' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'SwiftUINavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'UIKitNavigation' in project 'swift-navigation'
+    Target 'ComposableArchitecture' in project 'swift-composable-architecture'
+        ➜ Explicit dependency on target 'swift-composable-architecture_ComposableArchitecture' in project 'swift-composable-architecture'
+        ➜ Explicit dependency on target 'ComposableArchitectureMacros' in project 'swift-composable-architecture'
+        ➜ Explicit dependency on target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CombineSchedulers' in project 'combine-schedulers'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'Dependencies' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'DependenciesMacros' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'IdentifiedCollections' in project 'swift-identified-collections'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'Perception' in project 'swift-perception'
+        ➜ Explicit dependency on target 'Sharing' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'SwiftUINavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'UIKitNavigation' in project 'swift-navigation'
+    Target 'UIKitNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'UIKitNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'SwiftNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'UIKitNavigationShim' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'Perception' in project 'swift-perception'
+    Target 'SwiftUINavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'SwiftUINavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'SwiftNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'UIKitNavigationShim' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'UIKitNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'Perception' in project 'swift-perception'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'SwiftUINavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'SwiftNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'UIKitNavigationShim' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'UIKitNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'Perception' in project 'swift-perception'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'UIKitNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'SwiftNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'UIKitNavigationShim' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'Perception' in project 'swift-perception'
+    Target 'UIKitNavigationShim' in project 'swift-navigation' (no dependencies)
+    Target 'SwiftNavigation' in project 'swift-navigation'
+        ➜ Explicit dependency on target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'Perception' in project 'swift-perception'
+    Target 'Sharing' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'Sharing' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'swift-sharing_Sharing' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'Sharing1' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'Sharing2' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'CombineSchedulers' in project 'combine-schedulers'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'Dependencies' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'IdentifiedCollections' in project 'swift-identified-collections'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'PerceptionCore' in project 'swift-perception'
+    Target 'Sharing' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'swift-sharing_Sharing' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'Sharing1' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'Sharing2' in project 'swift-sharing'
+        ➜ Explicit dependency on target 'CombineSchedulers' in project 'combine-schedulers'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'Dependencies' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'IdentifiedCollections' in project 'swift-identified-collections'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'PerceptionCore' in project 'swift-perception'
+    Target 'PerceptionCore' in project 'swift-perception'
+        ➜ Explicit dependency on target 'PerceptionCore' in project 'swift-perception'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'Sharing2' in project 'swift-sharing' (no dependencies)
+    Target 'Sharing1' in project 'swift-sharing' (no dependencies)
+    Target 'swift-sharing_Sharing' in project 'swift-sharing' (no dependencies)
+    Target 'Perception' in project 'swift-perception'
+        ➜ Explicit dependency on target 'Perception' in project 'swift-perception'
+        ➜ Explicit dependency on target 'PerceptionCore' in project 'swift-perception'
+        ➜ Explicit dependency on target 'PerceptionMacros' in project 'swift-perception'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'Perception' in project 'swift-perception'
+        ➜ Explicit dependency on target 'PerceptionCore' in project 'swift-perception'
+        ➜ Explicit dependency on target 'PerceptionMacros' in project 'swift-perception'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'PerceptionMacros' in project 'swift-perception'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftCompilerPlugin' in project 'swift-syntax'
+    Target 'PerceptionCore' in project 'swift-perception'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'IdentifiedCollections' in project 'swift-identified-collections'
+        ➜ Explicit dependency on target 'IdentifiedCollections' in project 'swift-identified-collections'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+    Target 'IdentifiedCollections' in project 'swift-identified-collections'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+    Target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'InternalCollectionsUtilities' in project 'swift-collections'
+    Target 'OrderedCollections' in project 'swift-collections'
+        ➜ Explicit dependency on target 'InternalCollectionsUtilities' in project 'swift-collections'
+    Target 'InternalCollectionsUtilities' in project 'swift-collections' (no dependencies)
+    Target 'DependenciesMacros' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'DependenciesMacros' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'DependenciesMacrosPlugin' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+    Target 'DependenciesMacros' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'DependenciesMacrosPlugin' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+    Target 'DependenciesMacrosPlugin' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftCompilerPlugin' in project 'swift-syntax'
+    Target 'Dependencies' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'Dependencies' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'Clocks' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'CombineSchedulers' in project 'combine-schedulers'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+    Target 'Dependencies' in project 'swift-dependencies'
+        ➜ Explicit dependency on target 'Clocks' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'CombineSchedulers' in project 'combine-schedulers'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+    Target 'Clocks' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'Clocks' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'Clocks' in project 'swift-clocks'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+    Target 'CustomDump' in project 'swift-custom-dump'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+    Target 'CombineSchedulers' in project 'combine-schedulers'
+        ➜ Explicit dependency on target 'CombineSchedulers' in project 'combine-schedulers'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'CombineSchedulers' in project 'combine-schedulers'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+        ➜ Explicit dependency on target 'ConcurrencyExtras' in project 'swift-concurrency-extras'
+    Target 'ConcurrencyExtras' in project 'swift-concurrency-extras' (no dependencies)
+    Target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CasePathsCore' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CasePathsMacros' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+    Target 'CasePaths' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CasePathsCore' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'CasePathsMacros' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+    Target 'CasePathsMacros' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftCompilerPlugin' in project 'swift-syntax'
+    Target 'CasePathsCore' in project 'swift-case-paths'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+    Target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReportingPackageSupport' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'XCTestDynamicOverlay' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReportingPackageSupport' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+    Target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReportingPackageSupport' in project 'xctest-dynamic-overlay'
+    Target 'IssueReporting' in project 'xctest-dynamic-overlay'
+        ➜ Explicit dependency on target 'IssueReportingPackageSupport' in project 'xctest-dynamic-overlay'
+    Target 'IssueReportingPackageSupport' in project 'xctest-dynamic-overlay' (no dependencies)
+    Target 'ComposableArchitectureMacros' in project 'swift-composable-architecture'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftCompilerPlugin' in project 'swift-syntax'
+    Target 'SwiftCompilerPlugin' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftCompilerPlugin' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParser' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftOperators' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftBasicFormat' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParserDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxBuilder' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacroExpansion' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftCompilerPluginMessageHandling' in project 'swift-syntax'
+    Target 'SwiftCompilerPlugin' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParser' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftOperators' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftBasicFormat' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParserDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxBuilder' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacroExpansion' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftCompilerPluginMessageHandling' in project 'swift-syntax'
+    Target 'SwiftCompilerPluginMessageHandling' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParser' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftOperators' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftBasicFormat' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParserDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxBuilder' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacroExpansion' in project 'swift-syntax'
+    Target 'SwiftSyntaxMacroExpansion' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftBasicFormat' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParser' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParserDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxBuilder' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftOperators' in project 'swift-syntax'
+    Target 'SwiftOperators' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParser' in project 'swift-syntax'
+    Target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParser' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftBasicFormat' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParserDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxBuilder' in project 'swift-syntax'
+    Target 'SwiftSyntaxMacros' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParser' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftBasicFormat' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParserDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntaxBuilder' in project 'swift-syntax'
+    Target 'SwiftSyntaxBuilder' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftBasicFormat' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParser' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParserDiagnostics' in project 'swift-syntax'
+    Target 'SwiftParserDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftBasicFormat' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftParser' in project 'swift-syntax'
+    Target 'SwiftBasicFormat' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+    Target 'SwiftParser' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+    Target 'SwiftDiagnostics' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax' in project 'swift-syntax'
+    Target 'SwiftSyntax' in project 'swift-syntax'
+        ➜ Explicit dependency on target '_SwiftSyntaxCShims' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax509' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax510' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax600' in project 'swift-syntax'
+        ➜ Explicit dependency on target 'SwiftSyntax601' in project 'swift-syntax'
+    Target 'SwiftSyntax601' in project 'swift-syntax' (no dependencies)
+    Target 'SwiftSyntax600' in project 'swift-syntax' (no dependencies)
+    Target 'SwiftSyntax510' in project 'swift-syntax' (no dependencies)
+    Target 'SwiftSyntax509' in project 'swift-syntax' (no dependencies)
+    Target '_SwiftSyntaxCShims' in project 'swift-syntax' (no dependencies)
+    Target 'swift-composable-architecture_ComposableArchitecture' in project 'swift-composable-architecture' (no dependencies)
+    Target 'ConfettiSwiftUI' in project 'ConfettiSwiftUI'
+        ➜ Explicit dependency on target 'ConfettiSwiftUI' in project 'ConfettiSwiftUI'
+    Target 'ConfettiSwiftUI' in project 'ConfettiSwiftUI' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/yashlalit/Desktop/Challengely/Challengely/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -x c -c /dev/null
+
+ReadFileContents /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/docc/features.json
+
+Build description signature: d48d6539a63d344415b3df2a6ae00e74
+Build description path: /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/XCBuildData/d48d6539a63d344415b3df2a6ae00e74.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache
+    cd /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx15.5-24F74-8254517eb8b97d462ccbc072ba9094c9.sdkstatcache
+    cd /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx15.5-24F74-8254517eb8b97d462ccbc072ba9094c9.sdkstatcache
+
+WriteAuxiliaryFile /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.LinkFileList (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    write-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.LinkFileList
+
+WriteAuxiliaryFile /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.SwiftConstValuesFileList (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    write-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.SwiftFileList (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    write-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.SwiftFileList
+
+ProcessInfoPlistFile /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/swift-composable-architecture_ComposableArchitecture.bundle/Info.plist /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/swift-composable-architecture_ComposableArchitecture.build/empty-swift-composable-architecture_ComposableArchitecture.plist (in target 'swift-composable-architecture_ComposableArchitecture' from project 'swift-composable-architecture')
+    cd /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/SourcePackages/checkouts/swift-composable-architecture
+    builtin-infoPlistUtility /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/swift-composable-architecture_ComposableArchitecture.build/empty-swift-composable-architecture_ComposableArchitecture.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/swift-composable-architecture_ComposableArchitecture.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/swift-sharing_Sharing.bundle/Info.plist /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-sharing.build/Debug-iphonesimulator/swift-sharing_Sharing.build/empty-swift-sharing_Sharing.plist (in target 'swift-sharing_Sharing' from project 'swift-sharing')
+    cd /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/SourcePackages/checkouts/swift-sharing
+    builtin-infoPlistUtility /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-sharing.build/Debug-iphonesimulator/swift-sharing_Sharing.build/empty-swift-sharing_Sharing.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/swift-sharing_Sharing.bundle/Info.plist
+
+SwiftDriver SwiftNavigation normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SwiftNavigation' from project 'swift-navigation')
+    cd /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name SwiftNavigation -Onone -enforce-exclusivity\=checked @/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -target arm64-apple-ios13.0-simulator -g -module-cache-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Index.noindex/DataStore -swift-version 6 -I /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/Developer/Library/Frameworks -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/CasePathsMacros\#CasePathsMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/PerceptionMacros\#PerceptionMacros -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -output-file-map /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation.swiftmodule -user-module-version 2.3.2 -validate-clang-modules-once -clang-build-session-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name swift_navigation -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation_const_extract_protocols.json -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/DerivedSources-normal/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/DerivedSources/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation-Swift.h -working-directory /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver\ Compilation\ Requirements SwiftNavigation normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SwiftNavigation' from project 'swift-navigation')
+    cd /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name SwiftNavigation -Onone -enforce-exclusivity\=checked @/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -target arm64-apple-ios13.0-simulator -g -module-cache-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Index.noindex/DataStore -swift-version 6 -I /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/Developer/Library/Frameworks -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/CasePathsMacros\#CasePathsMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/PerceptionMacros\#PerceptionMacros -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -output-file-map /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation.swiftmodule -user-module-version 2.3.2 -validate-clang-modules-once -clang-build-session-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name swift_navigation -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation_const_extract_protocols.json -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/DerivedSources-normal/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/DerivedSources/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation-Swift.h -working-directory /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver\ Compilation SwiftNavigation normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SwiftNavigation' from project 'swift-navigation')
+    cd /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name SwiftNavigation -Onone -enforce-exclusivity\=checked @/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -target arm64-apple-ios13.0-simulator -g -module-cache-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Index.noindex/DataStore -swift-version 6 -I /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/Developer/Library/Frameworks -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/CasePathsMacros\#CasePathsMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/PerceptionMacros\#PerceptionMacros -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -output-file-map /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation.swiftmodule -user-module-version 2.3.2 -validate-clang-modules-once -clang-build-session-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name swift_navigation -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation_const_extract_protocols.json -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/DerivedSources-normal/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/DerivedSources/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-navigation.build/Debug-iphonesimulator/SwiftNavigation.build/Objects-normal/arm64/SwiftNavigation-Swift.h -working-directory /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver ComposableArchitecture normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ComposableArchitecture' from project 'swift-composable-architecture')
+    cd /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ComposableArchitecture -Onone -enforce-exclusivity\=checked @/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -Xcc -fmodule-map-file\=/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/UIKitNavigationShim.modulemap -DXcode -enable-upcoming-feature ExistentialAny -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -target arm64-apple-ios13.0-simulator -g -module-cache-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Index.noindex/DataStore -swift-version 6 -I /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/Developer/Library/Frameworks -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/CasePathsMacros\#CasePathsMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/ComposableArchitectureMacros\#ComposableArchitectureMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/DependenciesMacrosPlugin\#DependenciesMacrosPlugin -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/PerceptionMacros\#PerceptionMacros -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -output-file-map /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture.swiftmodule -user-module-version 1.20.2 -validate-clang-modules-once -clang-build-session-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name swift_composable_architecture -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture_const_extract_protocols.json -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/SourcePackages/checkouts/swift-navigation/Sources/UIKitNavigationShim/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/DerivedSources-normal/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/DerivedSources/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture-Swift.h -working-directory /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver\ Compilation\ Requirements ComposableArchitecture normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ComposableArchitecture' from project 'swift-composable-architecture')
+    cd /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ComposableArchitecture -Onone -enforce-exclusivity\=checked @/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -Xcc -fmodule-map-file\=/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/UIKitNavigationShim.modulemap -DXcode -enable-upcoming-feature ExistentialAny -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -target arm64-apple-ios13.0-simulator -g -module-cache-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Index.noindex/DataStore -swift-version 6 -I /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/Developer/Library/Frameworks -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/CasePathsMacros\#CasePathsMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/ComposableArchitectureMacros\#ComposableArchitectureMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/DependenciesMacrosPlugin\#DependenciesMacrosPlugin -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/PerceptionMacros\#PerceptionMacros -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -output-file-map /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture.swiftmodule -user-module-version 1.20.2 -validate-clang-modules-once -clang-build-session-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name swift_composable_architecture -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture_const_extract_protocols.json -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/SourcePackages/checkouts/swift-navigation/Sources/UIKitNavigationShim/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/DerivedSources-normal/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/DerivedSources/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture-Swift.h -working-directory /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver\ Compilation ComposableArchitecture normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ComposableArchitecture' from project 'swift-composable-architecture')
+    cd /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ComposableArchitecture -Onone -enforce-exclusivity\=checked @/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -Xcc -fmodule-map-file\=/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/UIKitNavigationShim.modulemap -DXcode -enable-upcoming-feature ExistentialAny -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -target arm64-apple-ios13.0-simulator -g -module-cache-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Index.noindex/DataStore -swift-version 6 -I /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk/Developer/Library/Frameworks -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/CasePathsMacros\#CasePathsMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/ComposableArchitectureMacros\#ComposableArchitectureMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/DependenciesMacrosPlugin\#DependenciesMacrosPlugin -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/PerceptionMacros\#PerceptionMacros -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -output-file-map /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture.swiftmodule -user-module-version 1.20.2 -validate-clang-modules-once -clang-build-session-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name swift_composable_architecture -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture_const_extract_protocols.json -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/SourcePackages/checkouts/swift-navigation/Sources/UIKitNavigationShim/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/DerivedSources-normal/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/DerivedSources/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/swift-composable-architecture.build/Debug-iphonesimulator/ComposableArchitecture.build/Objects-normal/arm64/ComposableArchitecture-Swift.h -working-directory /Users/yashlalit/Desktop/Challengely/Challengely.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+ProcessProductPackaging "" /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely.app-Simulated.xcent (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "QQMY3GY42T.com.yashlalit.Challengely";
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely.app-Simulated.xcent
+
+ProcessProductPackagingDER /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely.app-Simulated.xcent /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely.app-Simulated.xcent.der (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    /usr/bin/derq query -f xml -i /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely.app-Simulated.xcent -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely.app-Simulated.xcent.der --raw
+
+SwiftDriver Challengely normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Challengely -Onone -enforce-exclusivity\=checked @/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.SwiftFileList -DDEBUG -Xcc -fmodule-map-file\=/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/UIKitNavigationShim.modulemap -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -target arm64-apple-ios17.6-simulator -g -module-cache-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Index.noindex/DataStore -swift-version 5 -I /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/CasePathsMacros\#CasePathsMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/ComposableArchitectureMacros\#ComposableArchitectureMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/DependenciesMacrosPlugin\#DependenciesMacrosPlugin -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/PerceptionMacros\#PerceptionMacros -emit-localized-strings -emit-localized-strings-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64 -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -output-file-map /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely_const_extract_protocols.json -Xcc -iquote -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-generated-files.hmap -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-own-target-headers.hmap -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely-5ad5b254d83b5d52f22c1119a6e9dfd6-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-project-headers.hmap -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/SourcePackages/checkouts/swift-navigation/Sources/UIKitNavigationShim/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources-normal/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely-Swift.h -working-directory /Users/yashlalit/Desktop/Challengely -experimental-emit-module-separately -disable-cmo
+
+CompileAssetCatalogVariant thinned /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.app /Users/yashlalit/Desktop/Challengely/Challengely/Assets.xcassets (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/yashlalit/Desktop/Challengely/Challengely/Assets.xcassets --compile /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --filter-for-thinning-device-configuration iPhone17,3 --filter-for-device-os-version 18.5 --development-region en --target-device iphone --minimum-deployment-target 17.6 --platform iphonesimulator
+/* com.apple.actool.compilation-results */
+/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_generated_info.plist_thinned
+/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_output/thinned/AppIcon60x60@2x.png
+/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_output/thinned/AppIcon76x76@2x~ipad.png
+/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_output/thinned/Assets.car
+
+
+SwiftCompile normal arm64 Compiling\ ChatViewModel.swift,\ CommonConstants.swift,\ DifficultyView.swift,\ DailyChallengeAPI.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/ChatViewModel.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/CommonConstants.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/Views/DifficultyView.swift /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeAPI.swift (in target 'Challengely' from project 'Challengely')
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/ChatViewModel.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Common/CommonConstants.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Common/Views/DifficultyView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeAPI.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 Compiling\ UserNameView.swift,\ AppStore.swift,\ ChatMessageStreamView.swift,\ MotivationalIcon.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/Views/UserNameView.swift /Users/yashlalit/Desktop/Challengely/Challengely/App/AppStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessageStreamView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Components/MotivationalIcon.swift (in target 'Challengely' from project 'Challengely')
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Common/Views/UserNameView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/App/AppStore.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+/Users/yashlalit/Desktop/Challengely/Challengely/App/AppStore.swift:23:45: warning: '/' is deprecated: Use a 'CasePathable' case key path, instead
+        Scope(state: \.splashState, action: /Action.splash) {
+                                            ^
+/Users/yashlalit/Desktop/Challengely/Challengely/App/AppStore.swift:27:49: warning: '/' is deprecated: Use a 'CasePathable' case key path, instead
+        Scope(state: \.onboardingState, action: /Action.onboarding) {
+                                                ^
+/Users/yashlalit/Desktop/Challengely/Challengely/App/AppStore.swift:31:43: warning: '/' is deprecated: Use a 'CasePathable' case key path, instead
+        Scope(state: \.homeState, action: /Action.home) {
+                                          ^
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessageStreamView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Components/MotivationalIcon.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 Compiling\ ProgressStepper.swift,\ DailyChallengeStore.swift,\ OnboardingCompleteView.swift,\ ChatView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Components/ProgressStepper.swift /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/Views/OnboardingCompleteView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/ChatView.swift (in target 'Challengely' from project 'Challengely')
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Components/ProgressStepper.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeStore.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/Views/OnboardingCompleteView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/ChatView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 Compiling\ OnboardingView.swift,\ SplashViewModel.swift,\ ChatMessageStreamer.swift,\ LocalStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/OnboardingView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Splash/SplashViewModel.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatMessageStreamer.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/LocalStore.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/OnboardingView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Splash/SplashViewModel.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatMessageStreamer.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Common/LocalStore.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 Compiling\ DailyChallengeViewModel.swift,\ OnboardingStore.swift,\ SplashView.swift,\ ChatAPI.swift /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeViewModel.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/OnboardingStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Splash/SplashView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatAPI.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeViewModel.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/OnboardingStore.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Splash/SplashView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatAPI.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ Challengely (in target 'Challengely' from project 'Challengely')
+
+EmitSwiftModule normal arm64 (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 Compiling\ SplashStore.swift,\ IntrestsView.swift,\ HomeView.swift,\ CommonAPI.swift /Users/yashlalit/Desktop/Challengely/Challengely/Splash/SplashStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/Views/IntrestsView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Home/HomeView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/CommonAPI.swift (in target 'Challengely' from project 'Challengely')
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Splash/SplashStore.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Common/Views/IntrestsView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Home/HomeView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Common/CommonAPI.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 Compiling\ OnboardingViewModel.swift,\ SelectableRow.swift,\ HomeStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/OnboardingViewModel.swift /Users/yashlalit/Desktop/Challengely/Challengely/Components/SelectableRow.swift /Users/yashlalit/Desktop/Challengely/Challengely/Home/HomeStore.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/OnboardingViewModel.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Components/SelectableRow.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Home/HomeStore.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+/Users/yashlalit/Desktop/Challengely/Challengely/Home/HomeStore.swift:21:53: warning: '/' is deprecated: Use a 'CasePathable' case key path, instead
+        Scope(state: \.dailyChallengeState, action: /Action.dailyChallenge) {
+                                                    ^
+/Users/yashlalit/Desktop/Challengely/Challengely/Home/HomeStore.swift:25:43: warning: '/' is deprecated: Use a 'CasePathable' case key path, instead
+        Scope(state: \.chatState, action: /Action.chat) {
+                                          ^
+
+SwiftCompile normal arm64 Compiling\ AppView.swift,\ SelectableTile.swift,\ ChatInputView.swift,\ DailyChallengeCardView.swift /Users/yashlalit/Desktop/Challengely/Challengely/App/AppView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Components/SelectableTile.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeCardView.swift (in target 'Challengely' from project 'Challengely')
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/yashlalit/Desktop/Challengely/Challengely/Common/Views/UserNameView.swift /Users/yashlalit/Desktop/Challengely/Challengely/App/AppStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessageStreamView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Components/MotivationalIcon.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/OnboardingView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Splash/SplashViewModel.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatMessageStreamer.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/LocalStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Components/ProgressStepper.swift /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/Views/OnboardingCompleteView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/ChatView.swift /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeViewModel.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/OnboardingStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Splash/SplashView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatAPI.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/ChatViewModel.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/CommonConstants.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/Views/DifficultyView.swift /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeAPI.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessagingView.swift /Users/yashlalit/Desktop/Challengely/Challengely/ChallengelyApp.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/ChatStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatService.swift /Users/yashlalit/Desktop/Challengely/Challengely/Splash/SplashStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/Views/IntrestsView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Home/HomeView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Common/CommonAPI.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/Views/OnboardingWelcomeView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatStorage.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessageTextView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Components/CircularLoader.swift -primary-file /Users/yashlalit/Desktop/Challengely/Challengely/App/AppView.swift -primary-file /Users/yashlalit/Desktop/Challengely/Challengely/Components/SelectableTile.swift -primary-file /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift -primary-file /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeCardView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/OnboardingViewModel.swift /Users/yashlalit/Desktop/Challengely/Challengely/Components/SelectableRow.swift /Users/yashlalit/Desktop/Challengely/Challengely/Home/HomeStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessageBlockView.swift /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeView.swift /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources/GeneratedAssetSymbols.swift -supplementary-output-file-map /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/supplementaryOutputs-20 -emit-localized-strings -emit-localized-strings-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64 -target arm64-apple-ios17.6-simulator -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -I /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -no-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -swift-version 5 -enforce-exclusivity\=checked -Onone -D DEBUG -serialize-debugging-options -load-plugin-executable /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/CasePathsMacros\#CasePathsMacros -load-plugin-executable /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/ComposableArchitectureMacros\#ComposableArchitectureMacros -load-plugin-executable /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/DependenciesMacrosPlugin\#DependenciesMacrosPlugin -load-plugin-executable /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/PerceptionMacros\#PerceptionMacros -const-gather-protocols-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/yashlalit/Desktop/Challengely -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift -enable-anonymous-context-mangled-names -file-compilation-dir /Users/yashlalit/Desktop/Challengely -Xcc -fmodule-map-file\=/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/UIKitNavigationShim.modulemap -Xcc -ivfsstatcache -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-generated-files.hmap -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-own-target-headers.hmap -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely-5ad5b254d83b5d52f22c1119a6e9dfd6-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-project-headers.hmap -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/SourcePackages/checkouts/swift-navigation/Sources/UIKitNavigationShim/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources-normal/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources -Xcc -DDEBUG\=1 -module-name Challengely -frontend-parseable-output -disable-clang-spi -target-sdk-version 18.5 -target-sdk-name iphonesimulator18.5 -external-plugin-path /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/lib/swift/host/plugins\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/AppView.o -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/SelectableTile.o -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/ChatInputView.o -o /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/DailyChallengeCardView.o -index-unit-output-path /Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/AppView.o -index-unit-output-path /Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/SelectableTile.o -index-unit-output-path /Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/ChatInputView.o -index-unit-output-path /Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/DailyChallengeCardView.o -index-store-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Index.noindex/DataStore -index-system-modules
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/App/AppView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+/Users/yashlalit/Desktop/Challengely/Challengely/App/AppView.swift:13:38: warning: 'scope(state:action:)' is deprecated: Pass 'state' a key path to child state and 'action' a case key path to child action, instead. For more information see the following migration guide: https://pointfreeco.github.io/swift-composable-architecture/main/documentation/composablearchitecture/migratingto1.5#Store-scoping-with-key-paths
+                        store: store.scope(
+                                     ^
+/Users/yashlalit/Desktop/Challengely/Challengely/App/AppView.swift:21:38: warning: 'scope(state:action:)' is deprecated: Pass 'state' a key path to child state and 'action' a case key path to child action, instead. For more information see the following migration guide: https://pointfreeco.github.io/swift-composable-architecture/main/documentation/composablearchitecture/migratingto1.5#Store-scoping-with-key-paths
+                        store: store.scope(
+                                     ^
+/Users/yashlalit/Desktop/Challengely/Challengely/App/AppView.swift:29:38: warning: 'scope(state:action:)' is deprecated: Pass 'state' a key path to child state and 'action' a case key path to child action, instead. For more information see the following migration guide: https://pointfreeco.github.io/swift-composable-architecture/main/documentation/composablearchitecture/migratingto1.5#Store-scoping-with-key-paths
+                        store: store.scope(
+                                     ^
+@__swiftmacro_11Challengely0024ChatInputViewswift_ynAHffMX238_0_33_A6D5D900A1517064F40970C6DEEB0345Ll7PreviewfMf_.swift:26:44: error: cannot convert value of type 'Binding<Bool>' to expected argument type 'FocusState<Bool>.Binding'
+                                isFocused: $isFocused,
+                                           ^
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:239:1: note: in expansion of macro 'Preview' here
+#Preview {
+^~~~~~~~~~
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:239:1: note: in expansion of macro 'Preview' here
+#Preview {
+^~~~~~~~~~
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Components/SelectableTile.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+@__swiftmacro_11Challengely0024ChatInputViewswift_ynAHffMX238_0_33_A6D5D900A1517064F40970C6DEEB0345Ll7PreviewfMf_.swift:26:44: error: cannot convert value of type 'Binding<Bool>' to expected argument type 'FocusState<Bool>.Binding'
+                                isFocused: $isFocused,
+                                           ^
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:239:1: note: in expansion of macro 'Preview' here
+#Preview {
+^~~~~~~~~~
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:239:1: note: in expansion of macro 'Preview' here
+#Preview {
+^~~~~~~~~~
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:247:32: error: cannot convert value of type 'Binding<Bool>' to expected argument type 'FocusState<Bool>.Binding'
+                    isFocused: $isFocused,
+                               ^
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:143:47: error: value of type 'UINotificationFeedbackGenerator' has no member 'impactOccurred'
+                            feedbackGenerator.impactOccurred(intensity: 0.7)
+                            ~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~
+@__swiftmacro_11Challengely0024ChatInputViewswift_ynAHffMX238_0_33_A6D5D900A1517064F40970C6DEEB0345Ll7PreviewfMf_.swift:26:44: error: cannot convert value of type 'Binding<Bool>' to expected argument type 'FocusState<Bool>.Binding'
+                                isFocused: $isFocused,
+                                           ^
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:239:1: note: in expansion of macro 'Preview' here
+#Preview {
+^~~~~~~~~~
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:239:1: note: in expansion of macro 'Preview' here
+#Preview {
+^~~~~~~~~~
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeCardView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+@__swiftmacro_11Challengely0024ChatInputViewswift_ynAHffMX238_0_33_A6D5D900A1517064F40970C6DEEB0345Ll7PreviewfMf_.swift:26:44: error: cannot convert value of type 'Binding<Bool>' to expected argument type 'FocusState<Bool>.Binding'
+                                isFocused: $isFocused,
+                                           ^
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:239:1: note: in expansion of macro 'Preview' here
+#Preview {
+^~~~~~~~~~
+/Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatInputView.swift:239:1: note: in expansion of macro 'Preview' here
+#Preview {
+^~~~~~~~~~
+
+SwiftCompile normal arm64 Compiling\ ChatMessageBlockView.swift,\ DailyChallengeView.swift,\ GeneratedAssetSymbols.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessageBlockView.swift /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeView.swift /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessageBlockView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/DailyChallenge/DailyChallengeView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 Compiling\ ChatMessagingView.swift,\ ChallengelyApp.swift,\ ChatStore.swift,\ ChatService.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessagingView.swift /Users/yashlalit/Desktop/Challengely/Challengely/ChallengelyApp.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/ChatStore.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatService.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessagingView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/ChallengelyApp.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/ChatStore.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatService.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+LinkAssetCatalog /Users/yashlalit/Desktop/Challengely/Challengely/Assets.xcassets (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    builtin-linkAssetCatalog --thinned /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_output/thinned --thinned-dependencies /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_generated_info.plist_unthinned --output /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.app --plist-output /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.app/AppIcon60x60@2x.png (in target 'Challengely' from project 'Challengely')
+note: Emplaced /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.app/AppIcon76x76@2x~ipad.png (in target 'Challengely' from project 'Challengely')
+note: Emplaced /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.app/Assets.car (in target 'Challengely' from project 'Challengely')
+
+SwiftDriverJobDiscovery normal arm64 Compiling OnboardingViewModel.swift, SelectableRow.swift, HomeStore.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftCompile normal arm64 Compiling\ OnboardingWelcomeView.swift,\ ChatStorage.swift,\ ChatMessageTextView.swift,\ CircularLoader.swift /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/Views/OnboardingWelcomeView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatStorage.swift /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessageTextView.swift /Users/yashlalit/Desktop/Challengely/Challengely/Components/CircularLoader.swift (in target 'Challengely' from project 'Challengely')
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Onboarding/Views/OnboardingWelcomeView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Service/ChatStorage.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Chat/Views/ChatMessageTextView.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftCompile normal arm64 /Users/yashlalit/Desktop/Challengely/Challengely/Components/CircularLoader.swift (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling ChatMessageBlockView.swift, DailyChallengeView.swift, GeneratedAssetSymbols.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftDriverJobDiscovery normal arm64 Compiling OnboardingView.swift, SplashViewModel.swift, ChatMessageStreamer.swift, LocalStore.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ChatViewModel.swift, CommonConstants.swift, DifficultyView.swift, DailyChallengeAPI.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftDriverJobDiscovery normal arm64 Compiling UserNameView.swift, AppStore.swift, ChatMessageStreamView.swift, MotivationalIcon.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DailyChallengeViewModel.swift, OnboardingStore.swift, SplashView.swift, ChatAPI.swift (in target 'Challengely' from project 'Challengely')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for Challengely (in target 'Challengely' from project 'Challengely')
+
+SwiftDriver\ Compilation\ Requirements Challengely normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Challengely -Onone -enforce-exclusivity\=checked @/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.SwiftFileList -DDEBUG -Xcc -fmodule-map-file\=/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/UIKitNavigationShim.modulemap -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -target arm64-apple-ios17.6-simulator -g -module-cache-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Index.noindex/DataStore -swift-version 5 -I /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/CasePathsMacros\#CasePathsMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/ComposableArchitectureMacros\#ComposableArchitectureMacros -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/DependenciesMacrosPlugin\#DependenciesMacrosPlugin -Xfrontend -load-plugin-executable -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug/PerceptionMacros\#PerceptionMacros -emit-localized-strings -emit-localized-strings-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64 -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -output-file-map /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/yashlalit/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely_const_extract_protocols.json -Xcc -iquote -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-generated-files.hmap -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-own-target-headers.hmap -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely-5ad5b254d83b5d52f22c1119a6e9dfd6-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Challengely-project-headers.hmap -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/SourcePackages/checkouts/swift-navigation/Sources/UIKitNavigationShim/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources-normal/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources/arm64 -Xcc -I/Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely-Swift.h -working-directory /Users/yashlalit/Desktop/Challengely -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.swiftsourceinfo (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.swiftsourceinfo /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.swiftmodule (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.swiftmodule /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.abi.json (in target 'Challengely' from project 'Challengely')
+    cd /Users/yashlalit/Desktop/Challengely
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Intermediates.noindex/Challengely.build/Debug-iphonesimulator/Challengely.build/Objects-normal/arm64/Challengely.abi.json /Users/yashlalit/Library/Developer/Xcode/DerivedData/Challengely-fxaqkbfqilizawdxrenqaurbsdcz/Build/Products/Debug-iphonesimulator/Challengely.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+SwiftDriverJobDiscovery normal arm64 Compiling ProgressStepper.swift, DailyChallengeStore.swift, OnboardingCompleteView.swift, ChatView.swift (in target 'Challengely' from project 'Challengely')
+
